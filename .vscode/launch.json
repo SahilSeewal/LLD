@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "OrderService",
+            "request": "launch",
+            "mainClass": "food_ordering.service.OrderService",
+            "projectName": "LLD_f872e38a"
+        },
+        {
+            "type": "java",
+            "name": "LiftTest",
+            "request": "launch",
+            "mainClass": "LiftManagement.test.LiftTest",
+            "projectName": "LLD_f872e38a"
+        },
+        {
+            "type": "java",
             "name": "ParkingLotTest",
             "request": "launch",
             "mainClass": "ParkingLotTest",
