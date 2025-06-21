@@ -1,0 +1,44 @@
+Follwing patterns will be used:
+- Stratergy
+- State
+- Factory
+
+1. Controller will call service class for lift say LiftService for every request from outside or inside.
+2. LiftService contains a method say addRequest(Direction, floorNumber). Here this method will be used by both internal and external request panals.
+3. When a user hits request from external panal say addRequest(UP, 5), means user is at floor 5 and requesting the lift coming up.
+4. When a user hits request from internal panal say addRequest(UP, 5), means user is wants to move to floor 5 in upward movig lift.
+5. addRequest method adds request in upPriorityQueue(min value on top) and downPriorityQueue(max value on top) of lift.
+6. It will call move() method which is like as follows, which contains moveStratery.moveLift(lift):
+moveLift(lift) {
+  upList = lift.getUpPriorityQueue();
+  downList = getDgownPriorityQueue();
+  lift.state = changeState(new Move(this));
+  while(!upList.isEmpty() || !downList.isEmpty()) {
+    while(floor.getCurrentFloor() < maxFloor) {
+      if(!upList.isEmpty() && upList.top() == floor.getCurrentFloor()) {
+        lift.state.move(floor.getCurrentFloor(), floor.getCurrentFloor()+1); // print moving from src floor to dest floor & increase floor.currentFloor++ by invoking liftService
+        lift.state = changeState(new Open(this));
+        lift.state.open(floorNumber); // print open on floor number
+        lift.state = changeState(new Close(this));
+        lift.state.close(floorNumber); // print close on floor number 
+        lift.state = changeState(new Move(this));
+      }
+      else {
+        lift.setCurrentFloor(lift.getCurrentFloor + 1);
+      }
+    }
+
+    
+    while(floor.getCurrentFloor() > 0) {
+      if(!downList.isEmpty() && downListt.top() == floor.getCurrentFloor()) {
+        // Do same as above
+      }
+      else {
+        lift.setCurrentFloor(lift.getCurrentFloor - 1);
+      }
+    }
+
+
+    
+  }
+}
