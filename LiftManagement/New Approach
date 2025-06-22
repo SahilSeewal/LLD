@@ -1,8 +1,9 @@
+Approach: 1
 Follwing patterns will be used:
 - Stratergy
-- State
 - Factory
 
+When 
 1. Controller will call service class for lift say LiftService for every request from outside or inside.
 2. LiftService contains a method say addRequest(Direction, floorNumber). Here this method will be used by both internal and external request panals.
 3. When a user hits request from external panal say addRequest(UP, 5), means user is at floor 5 and requesting the lift coming up.
