@@ -1,8 +1,7 @@
-package LiftManagement.models;
+package models;
 
 import java.util.concurrent.PriorityBlockingQueue;
-
-import LiftManagement.constant.Direction;
+import constant.Direction;
 
 public class Lift {
     //private InternalPanal internalPanal;

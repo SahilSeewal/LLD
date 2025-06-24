@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="KafakQueue/|LiftManagement/NewApproach/Approach-1/service/|food_ordering/src/|scheduler/|multithreading_concept_test/|KafakQueue/repository/" kind="src" path=""/>
+	<classpathentry kind="src" path="food_ordering/src"/>
+	<classpathentry excluding="repository/" kind="src" path="KafakQueue"/>
+	<classpathentry kind="src" path="KafakQueue/repository"/>
+	<classpathentry kind="src" path="LiftManagement/NewApproach/Approach-1/service"/>
+	<classpathentry kind="src" path="multithreading_concept_test"/>
+	<classpathentry kind="src" path="scheduler"/>
+	<classpathentry kind="output" path="food_ordering/bin"/>
+</classpath>

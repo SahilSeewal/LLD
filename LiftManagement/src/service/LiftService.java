@@ -1,13 +1,13 @@
-package LiftManagement.service;
+package service;
 
 import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import LiftManagement.constant.Direction;
-import LiftManagement.models.Floor;
-import LiftManagement.models.Lift;
-import LiftManagement.models.Request;
+import constant.Direction;
+import models.Floor;
+import models.Lift;
+import models.Request;
 
 public class LiftService {
     private Lift lift;

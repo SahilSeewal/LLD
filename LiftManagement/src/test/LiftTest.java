@@ -1,4 +1,4 @@
-package LiftManagement.test;
+package test;
 /*
  * User can hit UP/DOWN button to request.
  * - UP -> User request for lift going upward.
@@ -18,11 +18,11 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import LiftManagement.constant.Direction;
-import LiftManagement.models.Floor;
-import LiftManagement.models.Lift;
-import LiftManagement.models.Request;
-import LiftManagement.service.LiftService;
+import constant.Direction;
+import models.Floor;
+import models.Lift;
+import models.Request;
+import service.LiftService;
 
 public class LiftTest {
     

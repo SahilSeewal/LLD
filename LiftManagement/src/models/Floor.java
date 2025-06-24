@@ -1,4 +1,4 @@
-package LiftManagement.models;
+package models;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

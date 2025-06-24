@@ -1,4 +1,4 @@
-package LiftManagement.models;
+package models;
 
 public class Request {
     private Floor fromFloor;
